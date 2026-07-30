@@ -113,3 +113,47 @@ p {
     }
 
 }
+/* انیمیشن شناور بودن سکه */
+@keyframes coinFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+/* انیمیشن چرخش هنگام کلیک */
+@keyframes coinSpin {
+    0% { transform: scale(0.95) rotate(0deg); }
+    50% { transform: scale(1.05) rotate(15deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+#coin{
+    animation: coinFloat 2s infinite ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* درخشش روی سکه */
+#coin::before{
+    content:"";
+    position:absolute;
+    top:-40%;
+    left:-60%;
+    width:40%;
+    height:180%;
+    background:rgba(255,255,255,.5);
+    transform:rotate(25deg);
+    animation:shine 3s infinite;
+}
+
+@keyframes shine{
+
+    0%{
+        left:-60%;
+    }
+
+    100%{
+        left:140%;
+    }
+
+}
