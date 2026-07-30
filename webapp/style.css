@@ -1,1 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    width: 350px;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 50px;
+    margin: 20px 0;
+    color: gold;
+}
+
+#coin {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+    background: gold;
+    transition: 0.15s;
+}
+
+#coin:hover {
+    transform: scale(1.05);
+}
+
+#coin:active {
+    transform: scale(0.92);
+}
