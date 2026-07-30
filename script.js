@@ -31,7 +31,21 @@ coin.addEventListener("click",()=>{
     energy--;
 
     updateUI();
+const effects=document.getElementById("effects");
 
+const plus=document.createElement("div");
+
+plus.className="plusOne";
+
+plus.innerText="+1";
+
+effects.appendChild(plus);
+
+setTimeout(()=>{
+
+    plus.remove();
+
+},800);
     coin.style.transform="scale(.9)";
 
     setTimeout(()=>{
