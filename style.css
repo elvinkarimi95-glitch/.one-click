@@ -1,1 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 360px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#score {
+    font-size: 50px;
+    color: gold;
+    margin: 20px 0;
+}
+
+#coin {
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #FFD700, #F4B400);
+    font-size: 80px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#coin:hover {
+    transform: scale(1.05);
+}
+
+#coin:active {
+    transform: scale(0.95);
+}
