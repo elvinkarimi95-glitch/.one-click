@@ -21,7 +21,11 @@ function updateUI(){
 }
 
 updateUI();
+coin.style.animation = "coinSpin .25s";
 
+setTimeout(() => {
+    coin.style.animation = "coinFloat 2s infinite ease-in-out";
+},250);
 coin.addEventListener("click",()=>{
 
     if(energy<=0) return;
