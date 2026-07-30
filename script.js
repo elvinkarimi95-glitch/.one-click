@@ -22,3 +22,4 @@ coin.addEventListener("click", () => {
         coin.style.transform = "scale(1)";
     }, 100);
 });
+alert("script loaded");
